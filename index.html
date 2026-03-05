@@ -2,9 +2,17 @@
 <html>
 <body>
 
-<button onclick="document.getElementById('myAudio').play()">Play Sound</button>
+<button id="playBtn">Play Sound</button>
 
-<audio id="myAudio" src="faaa.mp3"></audio>
+<audio id="audio" src="./faaa.mp3"></audio>
+
+<script>
+document.getElementById("playBtn").addEventListener("click", function() {
+    document.getElementById("audio").play().catch(function(error) {
+        alert("Audio play failed: " + error);
+    });
+});
+</script>
 
 </body>
 </html>
