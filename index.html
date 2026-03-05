@@ -6,15 +6,27 @@ body {
     margin: 0;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle, #141e30, #243b55);
+    background: radial-gradient(circle, #0f2027, #203a43, #000000);
     font-family: Arial, sans-serif;
+    color: white;
 }
 
-/* Button styling (MyInstants / prank style) */
-#jobBtn {
-    padding: 20px 50px;
+/* Name at top */
+#name {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+/* Gaming / prank style button */
+#playBtn {
+    padding: 20px 55px;
     font-size: 24px;
     font-weight: bold;
     border: none;
@@ -28,26 +40,25 @@ body {
     letter-spacing: 2px;
 }
 
-#jobBtn:hover {
+#playBtn:hover {
     box-shadow: 0 0 40px rgba(0, 198, 255, 1);
     transform: scale(1.08);
 }
 
-#jobBtn:active {
+#playBtn:active {
     transform: scale(0.95);
 }
 </style>
 </head>
 <body>
 
-<!-- Button renamed to JOB -->
-<button id="jobBtn">MY JOB</button>
+<div id="name">HanyJosephh</div>
 
-<!-- Sound file -->
+<button id="playBtn">PLAY SOUND</button>
 <audio id="audio" src="./faaa.mp3"></audio>
 
 <script>
-document.getElementById("jobBtn").addEventListener("click", function() {
+document.getElementById("playBtn").addEventListener("click", function() {
     document.getElementById("audio").play().catch(function(error) {
         alert("Audio play failed: " + error);
     });
