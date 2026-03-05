@@ -24,24 +24,24 @@ body {
     text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
 }
 
-/* Gaming / prank style button */
+/* Round red gaming pad button */
 #playBtn {
-    padding: 20px 55px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: none;
+    background: radial-gradient(circle at top, #ff5252, #b30000);
+    color: white;
     font-size: 24px;
     font-weight: bold;
-    border: none;
-    border-radius: 50px;
-    background: linear-gradient(90deg, #00c6ff, #0072ff);
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 0 20px rgba(0, 198, 255, 0.8);
-    transition: all 0.2s ease;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.6);
+    transition: all 0.2s ease;
 }
 
 #playBtn:hover {
-    box-shadow: 0 0 40px rgba(0, 198, 255, 1);
+    box-shadow: 0 15px 35px rgba(255, 0, 0, 0.9);
     transform: scale(1.08);
 }
 
@@ -54,7 +54,7 @@ body {
 
 <div id="name">HanyJosephh</div>
 
-<button id="playBtn">PLAY SOUND</button>
+<button id="playBtn">PRESS</button>
 <audio id="audio" src="./faaa.mp3"></audio>
 
 <script>
