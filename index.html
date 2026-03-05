@@ -12,7 +12,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#playBtn {
+/* Button styling (MyInstants / prank style) */
+#jobBtn {
     padding: 20px 50px;
     font-size: 24px;
     font-weight: bold;
@@ -27,23 +28,26 @@ body {
     letter-spacing: 2px;
 }
 
-#playBtn:hover {
+#jobBtn:hover {
     box-shadow: 0 0 40px rgba(0, 198, 255, 1);
     transform: scale(1.08);
 }
 
-#playBtn:active {
+#jobBtn:active {
     transform: scale(0.95);
 }
 </style>
 </head>
 <body>
 
-<button id="playBtn">PLAY SOUND</button>
+<!-- Button renamed to JOB -->
+<button id="jobBtn">MY JOB</button>
+
+<!-- Sound file -->
 <audio id="audio" src="./faaa.mp3"></audio>
 
 <script>
-document.getElementById("playBtn").addEventListener("click", function() {
+document.getElementById("jobBtn").addEventListener("click", function() {
     document.getElementById("audio").play().catch(function(error) {
         alert("Audio play failed: " + error);
     });
