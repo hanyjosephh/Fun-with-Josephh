@@ -2,17 +2,9 @@
 <html>
 <body>
 
-<button onclick="playSound()">Play Sound</button>
+<button onclick="document.getElementById('myAudio').play()">Play Sound</button>
 
-<audio id="myAudio">
-  <source src="sound.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-function playSound() {
-  document.getElementById("myAudio").play();
-}
-</script>
+<audio id="myAudio" src="faaa.mp3"></audio>
 
 </body>
 </html>
